@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion Cinco</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/cambio1.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="falce" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Dia de la Tierra </h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Tierra</h1>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/dlh4htYFIj0" frameborder="0" allowfullscreen></iframe></p>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Tocar</h1>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/visorindex.html" style="width:978px;height:180px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com --> </div>
+</div>
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Dia De la Tierra</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Sus cuidados</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Regla de las tres "R"</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Cambio Climatico?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de Contaminacion</h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+
+  <div>
+  <h4>Aplicacion 5</h4>
+  <h4>Jose Heriberto Bautista Ramirez</h4>
+  </div>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1Dia De la Tierra</h1>
+ 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h2>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</h2>
+  <h2><img src="imagenes/tierra.jpg" width="589" height="399"></h2>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicacion 5, JHBR</h4>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h4>Sus cuidados:</h4>
+ </div>
+<div data-role="content" align="center">
+ <div>
+  1.- Separa la basura: En un bote coloca los restos de comida (esto es la basura orgánica), y en otro deposita el cartón, vidrio, papel y plástico que ya no necesitas.
+ <h1><img src="imagenes/separa.jpg" width="50%" height="50%"></h1>
+ 2.- Lleva tus propias bolsas: Seguramente tienes bolsas de tela en casa, cuando vayas al supermercado evita las bolsas de plástico pues éstas tardan en degradarse 150 años.
+ <h1><img src="imagenes/bolsas.jpg" width="50%" height="50%"></h1>
+ 3.- Consume la menor cantidad de productos desechables: Productos como los trastes de plástico y unicel generan una gran cantidad de basura.
+ <h1><img src="imagenes/platos.jpg" width="50%" height="50%"></h1>
+ 4.- Prefiere las pilas recargables en vez de las communes: Así evitarás estar comprando y desechando baterías, además las pilas son muy dañinas y contaminan el agua.
+ <h1><img src="imagenes/pilas.jpg" width="50%" height="50%"></h1>
+ 5.- Modera el uso de pañuelos faciales: Mientras menos pañuelos, servilletas y papel de baño uses, estarás generando menos basura.
+ <h1><img src="imagenes/pañuelos.jpg" width="50%" height="50%"></h1>
+ 6.- Apaga las luces y aparatos eléctricos que no estés utilizando.
+ <h1><img src="imagenes/luz.jpg" width="50%" height="50%"></h1>
+ 7.- En cuanto al cuidado de agua, si lavas los trastes, cierra el grifo mientras los enjabonas, de igual manera cierra la llave de la regadera cuando te talles y cuando te laves los dientes sólo necesitas un vaso con agua para enjuagarte.
+ <h1><img src="imagenes/grifo.png" width="576" height="392"></h1>
+ 8.- Si riegas el jardín, procura hacerlo ya avanzada la tarde, ya que con esto evitarás que el sol evapore parte del agua que debe de llegar a las plantas.
+ <h1><img src="imagenes/regar.jpg" width="50%" height="50%"></h1>
+ 9.- Existen electrodomésticos ecotec, que tienen como principal objetivo detectar fugas y economizan electricidad y agua.
+ <h1><img src="imagenes/ecotec.jpg" width="50%" height="50%"></h1>
+ 10.- No arrojes basura a la calle, deposítala en un bote de basura y si no encuentras ninguno por tu paso, guárdala en tu bolsa o mochila y espera a tirarla en casa.
+ <h1><img src="imagenes/basura.jpg" width="50%" height="50%"></h1>
+ 11.- Si te trasladarás a un lugar cercano opta por caminar o ir en bici, de igual forma para ir al trabajo ponte de acuerdo con compañeros que vivan cerca de tu casa, y compartan auto, ayudarán a reducir los efectos del CO2.
+ <h1><img src="imagenes/bici.jpg" width="50%" height="50%"></h1>
+ 12.- Respeta las áreas verdes, jardines y parque públicos, no los dañes, no arrojes basura y si vas a pasear a tu mascota recoge sus heces fecales.</h2>
+ <h2><img src="imagenes/cuidado.jpg" width="50%" height="50%"></h2>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion 5, JHBR</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Regla de las tres "R":</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h1>La regla de las tres erres, también conocida como las tres erres de la ecología o simplemente 3R, es una propuesta sobre hábitos de consumo, popularizada por la organización ecologista Greenpeace, que pretende desarrollar hábitos como el consumo responsable. Este concepto hace referencia a estrategias para el manejo de residuos que buscan ser más sustentables con el medio ambiente y específicamente dar prioridad a la reducción en el volumen de residuos generados. Durante la Cumbre del G8 en junio de 2004, el Primer Ministro de Japón, Koizumi Junichiro, presentó la Iniciativa de las tres erres que busca construir una sociedad orientada hacia el reciclaje.1 En abril de 2005 se llevó a cabo una asamblea de ministros en la que se discutió con Estados Unidos, Alemania, Francia y otros 20 países la manera en que se puede implementar de manera internacional acciones relacionadas a las tres erres. </h1>
+ <h2><img src="imagenes/r.jpg" width="50%" height="50%"></h2>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion 5 JHBR</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h4>¿Cambio Climatico?:</h4>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Durante 2007 los informes internacionales sobre la situación del planeta hicieron más evidente el argumento según el cual el calentamiento global, en gran medida, es producto de la mano del hombre.
+Este año además el Comité Intergubernamental sobre Cambio Climático (IPCC) publicó una serie de estudios -los más preocupantes hasta ahora- que explican la dimensión del problema en términos de impacto sobre poblaciones, continentes y recursos naturales.
+El IPCC reúne a más de 20.000 científicos de 21 países y entre sus proyecciones está que el nivel del mar probablemente aumente entre 28 y 43 cm. antes de 2100. Pero también algunos grupos de presión han sugerido que los informes que advierten de los riesgos del cambio climático están exagerando la amenaza. </h2>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/cambio1.jpg',1)"><img src="imagenes/cambio.jpg" width="558" height="339" id="Image22"></a></p>
+
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion 5, JHBR</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Tipos de Contaminacion</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Contaminación del Agua</h2>
+ <h2>Los residuos industriales se vierten en estos cuerpos de agua. Esto provoca un desequilibrio químico en el agua que conduce a la muerte de los seres acuáticos.
+Insecticidas, pesticidas y productos químicos de maduración que se utilizan en las plantas que se usan en el sistema de aguas subterráneas o arroyos cercanos.
+Lavar la ropa cerca de lagos y ríos detergentes causa una enfermedad llamada “eutrofización”, que bloquea la luz del sol entre en el interior y reduce los valores de oxígeno en el agua, causando un ambiente inhabitable.</h2>
+<h2><img src="imagenes/agua.jpg" width="50%" height="50%"></h2>
+<h2>Contaminación del Aire</h2>
+<h2> contaminación atmosférica a la presencia en el aire de materias o formas de energía que implican riesgo, daño o molestia grave para las personas y bienes de cualquier naturaleza,así como que puedan atacar a distintos materiales, reducir la visibilidad o producir olores desagradables.
+ La contaminación atmosférica puede tener carácter local, cuando los efectos ligados al foco se sufren en las inmediaciones del  mismo, o planetario, cuando por las características del contaminante, se ve afectado el equilibrio del planeta y zonas alejadas a las que contienen los focos emisores.</h2>
+ <h2><img src="imagenes/contaminacion.jpg" width="50%" height="50%"></h2>
+<h2>Contaminación del Suelo</h2>
+<h2>La contaminación del suelo consiste en la acumulación de sustancias a unos niveles tales que repercuten negativamente en el comportamiento de los suelos. Las sustancias, a esos niveles de concentración, se vuelven tóxicas para los organismos que viven en él. Se trata de una degradación química que provoca la pérdida parcial o total de su productividad.
+El suelo generalmente se contamina de diversas formas: cuando se rompen tanques de almacenamiento subterráneo, cuando se aplican pesticidas, por filtraciones del alcantarillado y pozos ciegos, o por acumulación directa 
+de productos industriales o radioactivos.</h2>
+ <h2><img src="imagenes/suelo.jpg" width="50%" height="50%"></h2>
+<h2>Contaminación Térmica</h2>
+<h2>La contaminación térmica se produce cuando un proceso altera la temperatura del medio de forma indeseada o perjudicial.
+El medio más habitual donde se produce es en el agua, ya que el aire se disipa más fácilmente.
+Las centrales térmicas necesitan refrigeración ya que no convierten toda la energía química en electricidad (solo entre un 20-60 %) y el resto en calor. El agua es un buen medio para disipar el calor, es accesible y tiene una gran inercia térmica. Por eso estas centrales se sitúan cerca de un río o el mar.
+Para disminuir el impacto antes de verter el agua caliente en el río o el mar, se suele pasar por una torre de evaporación que disminuye en parte la temperatura. Sin embargo, concentra las sales del río o el mar alterando las propiedades físico-químicas del agua.</h2>
+<h2><img src="imagenes/termica.jpg" width="50%" height="50%"></h2>
+<h2>La Contaminación radiactiva</h2>
+<h2>Se denomina contaminación radiactiva o contaminación nuclear a la presencia no deseada de sustancias radioactivas en el entorno. Esta contaminación puede proceder de radioisótopos naturales o artificiales.
+La primera de ellas se da cuando se trata de aquellos isótopos radiactivos que existen en la corteza terrestre desde la formación de la Tierra o de los que se generan continuamente en la atmósfera por la acción de los rayos cósmicos. Cuando estos radioisótopos naturales se encuentran en concentraciones más elevadas que las que pueden encontrarse en la naturaleza </h2>
+<h2><img src="imagenes/radiactiva.jpg" width="50%" height="50%"></h2>
+<h2>Contaminación Acústica</h2>
+<h2>El ruido es en realidad una palabra latina que le da el significado? Mareo?. Más comúnmente, se puede afirmar que la sensación de molestia, desagrado o molestia.
+No es muy fácil de definir la definición de la contaminación acústica. Esencialmente, la contaminación acústica es el tipo de contaminación que se produce por diferentes fuentes de audio que está causando la sensación de irritación, distracción para nuestro medio ambiente. Esta contaminación no es no sólo perturbar el medio ambiente sino que también produce daño a nuestra humanidad.</h2>
+<h2><img src="imagenes/acustica.jpg" width="50%" height="50%"></h2>
+<h2>Contaminación Lumínica</h2>
+<h2>La contaminación lumínica puede definirse como la emisión de flujo luminoso de fuentes artificiales de luz nocturnas en intensidades, direcciones, rangos espectrales u horarios innecesarios para la realización de las actividades previstas en la zona en la que se instalan las luces.
+Un ineficiente y mal diseñado alumbrado exterior, la utilización de proyectores y cañones láser, la inexistente regulación del horario de apagado de iluminaciones publicitarias, monumentales u ornamentales, etc., generan este problema cada vez más extendido.
+La contaminación lumínica tiene como manifestación más evidente el aumento del brillo del cielo nocturno, por reflexión y difusión de la luz artificial en los gases y en las partículas del aire urbano </h2>
+<h2><img src="imagenes/lumica.jpg" width="50%" height="50%"></h2>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion 5, JHBR	</h4>
+ </div>
+ </div>
+ </div>
+
+ </body>
+ </html>
